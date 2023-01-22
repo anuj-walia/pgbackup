@@ -31,3 +31,13 @@ Follow these steps to start developing with this project:
 3. `cd` into the repository
 4. Activate virtualenv: `pipenv shell`
 5. Install dependencies: `pipenv insta
+
+
+## PG Client
+psql postgres://demo:Unix@001@54.163.56.165:80/sample -c "SELECT count(id) FROM employees;"
+
+sudo yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+$ sudo yum update -y
+$ sudo yum autoremove -y postgresql
+sudo yum install -y postgresql11-server
+export PATH=/usr/pgsql-11/bin:$PATH
